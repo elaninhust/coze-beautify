@@ -1,0 +1,63 @@
+{
+  "name": "coze-beautify",
+  "description": "",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build:hmr && (run-p wss build:watch)",
+    "dev:firefox": "npm run build:hmr && (run-p wss build:firefox:watch)",
+    "build": "tsc && vite build",
+    "build:firefox": "tsc --noEmit && cross-env __FIREFOX__=true vite build",
+    "build:watch": "cross-env __DEV__=true vite build -w --mode development",
+    "build:firefox:watch": "cross-env __DEV__=true __FIREFOX__=true vite build -w --mode development",
+    "build:hmr": "rollup --config utils/reload/rollup.config.mjs",
+    "wss": "node utils/reload/initReloadServer.js",
+    "lint:fix": "eslint . --ext .cjs,.mjs,.ts,.tsx,.cts,.mts --quiet --fix --ignore-path .gitignore",
+    "lint:format": "prettier . --write \"./**/*.{cjs,mjs,ts,tsx,cts,mts,css,md,json}\" --config .prettierrc.cjs",
+    "lint": "npm run lint:format && npm run lint:fix ",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "help": "rollup -h"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/chrome": "^0.0.249",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/ws": "^8.5.8",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "chokidar": "^3.5.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "rollup": "^4.3.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "webextension-polyfill": "^0.10.0",
+    "ws": "^8.14.2"
+  },
+  "lint-staged": {
+    "./**/*.{cjs,mjs,ts,tsx,cts,mts}": [
+      "npm run lint"
+    ],
+    "./**/*{.md,css,json}": [
+      "npm run lint:format"
+    ]
+  }
+}

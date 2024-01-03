@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "vite-react-ts-template",
+  "version": "1.0.0",
+  "description": "",
+  "permissions": ["storage"],
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/js/*.js",
+        "assets/css/*.css",
+        "icon-128.png",
+        "icon-34.png"
+      ],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "options_page": "src/pages/options/index.html",
+  "action": {
+    "default_popup": "src/pages/popup/index.html",
+    "default_icon": "icon-34.png"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // 将代码编译为ES2020的 JS
+    "useDefineForClassFields": true, // 使用 Object.defineProperty 定义 class 中的属性，而非使用 obj.key = value 的形式定义属性
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // 引入 ES 最新特性和 DOM 接口的类型定义
+    "module": "ESNext", // 使用 ES Module 格式打包编译后的文件
+    "skipLibCheck": true, // 跳过对 .d.ts 文件的类型检查
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // 使用 Node 的模块解析策略
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true, // 允许引入 JSON 文件
+    "isolatedModules": true, // 该属性要求所有文件都是 ES Module 模块
+    "noEmit": true,
+    "jsx": "react-jsx", // 保留原始的 JSX 代码，不进行编译
+
+    /* Linting */
+    "strict": true, // 启用所用严格的类型检查
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["./*"],
+      "@src/*": ["src/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"]
+    }
+
+    /* 手动包含 第三方 types 包定义 */
+    // https://www.typescriptlang.org/tsconfig#types
+    // "types": []
+
+    /* 指定 types 包的文件夹地址，默认是 ./node_modules/@types */
+    // https://www.typescriptlang.org/tsconfig#typeRoots
+    // "typeRoots": []
+  },
+  "include": ["src", "utils"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

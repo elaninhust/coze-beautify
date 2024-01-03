@@ -1,0 +1,20 @@
+// tsconfig.node.json 是专门用于 vite.config.ts 的 TypeScript 配置文件
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "types": ["./src/environment.d.ts", "./node_modules/@types/chrome"]
+  },
+  "include": [
+    "vite.config.ts",
+    "manifest.ts",
+    "manifest.config.ts",
+    "package.json",
+    "utils/plugins",
+    "utils/manifest-parser",
+    "utils/log.ts"
+  ]
+}

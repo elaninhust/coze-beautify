@@ -8,7 +8,7 @@
 
 1. `Develop` 、`Skills` 、`Preview` 三个部分宽度均分，然而现实却是 `Skills` 很少需要关注，而最高频的对话界面 `Preview` 又过于窄
 
-<img width="600" src="assets/SCR-20240104-moya.png" alt="coze-beautify Logo">
+<div align="center"><img width="600" src="assets/SCR-20240104-moya.png" alt="coze-beautify Logo"></div>
 
 优化后：
 

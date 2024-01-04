@@ -93,7 +93,7 @@ function generateRollupInputOptions(
 
   if (config.content) {
     input.content = resolve(pagesDir, 'content', 'index.ts');
-    input.contentStyle = resolve(pagesDir, 'content', 'style.pcss');
+    input.contentStyle = resolve(pagesDir, 'content', 'style.css');
   }
 
   if (config.devtools) {

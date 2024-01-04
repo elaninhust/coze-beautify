@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "vite-react-ts-template",
+  "name": "coze-beautify",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is a chrome extension named coze-beautify.",
   "permissions": ["storage"],
   "icons": {
     "128": "icon-128.png"
@@ -18,9 +18,15 @@
       "matches": ["*://*/*"]
     }
   ],
-  "options_page": "src/pages/options/index.html",
-  "action": {
-    "default_popup": "src/pages/popup/index.html",
-    "default_icon": "icon-34.png"
-  }
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.coze.com/space/*/bot/*",
+        "*://*.coze.com/space/*/bot",
+        "*://*.coze.com/explore/*"
+      ],
+      "js": ["src/pages/content/index.js"],
+      "css": ["assets/css/contentStyle17043481545.chunk.css"]
+    }
+  ]
 }

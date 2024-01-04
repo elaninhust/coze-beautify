@@ -1,0 +1,76 @@
+/* CSS that can pollute global styles. Use it with caution. */
+/* If you use ShodowRoot for style pollution, this style will not be applied inside the content script. */
+.sidesheet-container {
+  grid-template-columns: 12fr 0 24fr !important;
+}
+
+.sidesheet-container > div:nth-child(2) {
+  width: 0;
+  overflow: hidden;
+}
+
+.sidesheet-container-with-skills.sidesheet-container {
+  grid-template-columns: 12fr 12fr 12fr !important;
+}
+
+.sidesheet-container-with-skills.sidesheet-container > div:nth-child(2) {
+  width: unset;
+  overflow: unset;
+}
+
+.content-container {
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  transform: translateX(100%) translateX(-12px);
+  z-index: 999;
+  background-color: #f7f7fa;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 12px;
+  opacity: 0.6;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 0px 20px 1px #ccc;
+}
+
+.content-container:hover {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.content-container p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.content-toggle-container {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.content-toggle-container-on {
+  background-color: #6e75ee;
+  border-color: #6e75ee;
+}
+
+.content-toggle-ball {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f7f7fa;
+  transition: left 0.2s ease-in-out;
+}
+
+.content-toggle-ball-on {
+  left: calc(100% - 20px);
+}

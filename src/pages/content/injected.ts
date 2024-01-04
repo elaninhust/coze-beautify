@@ -6,4 +6,4 @@ async function toggleTheme() {
   console.log('toggled theme', await exampleThemeStorage.get());
 }
 
-void toggleTheme();
+toggleTheme();

@@ -1,6 +1,6 @@
 {
   "name": "coze-beautify",
-  "description": "",
+  "description": "this is a chrome extension named coze-beautify.",
   "private": true,
   "version": "1.0.0",
   "type": "module",

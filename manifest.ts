@@ -41,7 +41,11 @@ function generateManifest(
   if (config.content) {
     manifest.content_scripts = [
       {
-        matches: ['http://*/*', 'https://*/*', '<all_urls>'],
+        matches: [
+          '*://*.coze.com/space/*/bot/*',
+          '*://*.coze.com/space/*/bot',
+          '*://*.coze.com/explore/*',
+        ],
         js: ['src/pages/content/index.js'],
         // KEY for cache invalidation
         css: ['assets/css/contentStyle<KEY>.chunk.css'],

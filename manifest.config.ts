@@ -1,10 +1,10 @@
 const manifestConfig = {
   background: false,
-  content: false,
+  content: true,
   devtools: false,
   newtab: false,
-  options: true,
-  popup: true,
+  options: false,
+  popup: false,
 };
 
 export default manifestConfig;

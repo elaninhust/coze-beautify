@@ -18,3 +18,12 @@
 <div align="center"><img width="600" src="assets/SCR-20240104-mshh.png" alt="coze-beautify Logo"></div>
 
 <div align="center"><img width="600" src="assets/SCR-20240104-msmm.png" alt="coze-beautify Logo"></div>
+
+### 如何使用
+
+1. 下载最新 [release](https://github.com/elaninhust/coze-beautify/releases)的 `dist.zip`，并在本地解压
+2. 在 `Chrome` 地址栏中 输入 `chrome://extensions/`, 打开右上角的 `开发者模式` 开关
+3. 将第一步中解压好的整个 dist 文件夹直接拖到第二步的页面中
+4. 直接使用即可
+
+> 注意：由于 [coze](https://www.coze.com) 使用的 SPA 单页面应用，为保证只对 bot 详情页面生效，只会在 bot 页面注入脚本，所有可能存在脚本未加载的情况，直接手动刷新页面即可。

@@ -27,3 +27,5 @@
 4. 直接使用即可
 
 > 注意：由于 [coze](https://www.coze.com) 使用的 SPA 单页面应用，为保证只对 bot 详情页面生效，只会在 bot 页面注入脚本，所有可能存在脚本未加载的情况，直接手动刷新页面即可。
+
+<div align="center"><img width="600" src="assets/SCR-20240105-pqfr.png" alt="coze-beautify Logo"></div>

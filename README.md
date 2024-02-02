@@ -29,3 +29,8 @@
 > 注意：由于 [coze](https://www.coze.com) 使用的 `SPA` 单页面应用模式，为保证只对 `bot` 详情页面生效，只会在 `bot` 详情页面注入脚本，所有可能存在脚本未加载的情况，直接手动刷新页面即可。
 
 <div align="center"><img width="600" src="assets/SCR-20240105-pqfr.png" alt="coze-beautify Logo"></div>
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=elaninhust/coze-beautify&type=Date)](https://star-history.com/#elaninhust/coze-beautify&Date)
+

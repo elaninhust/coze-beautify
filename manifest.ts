@@ -42,6 +42,7 @@ function generateManifest(
     manifest.content_scripts = [
       {
         matches: [
+          '*://*.coze.com/*',
           '*://*.coze.com/space/*/bot/*',
           '*://*.coze.com/space/*/bot',
           '*://*.coze.com/explore/*',

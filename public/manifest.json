@@ -21,12 +21,13 @@
   "content_scripts": [
     {
       "matches": [
+        "*://*.coze.com/*",
         "*://*.coze.com/space/*/bot/*",
         "*://*.coze.com/space/*/bot",
         "*://*.coze.com/explore/*"
       ],
       "js": ["src/pages/content/index.js"],
-      "css": ["assets/css/contentStyle17043492126.chunk.css"]
+      "css": ["assets/css/contentStyle17096298409.chunk.css"]
     }
   ]
 }

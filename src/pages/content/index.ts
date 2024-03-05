@@ -8,6 +8,4 @@
  *
  */
 import('@pages/content/ui');
-// import('@pages/content/injected');
-
-console.log('content loaded');
+import('@pages/content/injected');

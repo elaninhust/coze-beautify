@@ -8,5 +8,3 @@ reloadOnUpdate('pages/background');
  * If you do not use the css of the content script, please delete it.
  */
 reloadOnUpdate('pages/content/style.pcss');
-
-console.log('background loaded');

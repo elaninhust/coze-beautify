@@ -1,31 +1,40 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+import { useUrlChange } from '../utils';
 
 export default function App() {
-  const [showSkills, setShowSkills] = useState(false);
+  const [showAll, setShowAll] = useState(false);
+  const urlChangeStatus = useUrlChange();
 
   const handleClick = () => {
-    if (showSkills) {
+    if (showAll) {
+      // my bot
       document
         .querySelector('.sidesheet-container')
-        ?.classList.remove('sidesheet-container-with-skills');
+        ?.classList.remove('sidesheet-container-show-all');
     } else {
+      // my bot
       document
         .querySelector('.sidesheet-container')
-        ?.classList.add('sidesheet-container-with-skills');
+        ?.classList.add('sidesheet-container-show-all');
     }
-    setShowSkills(!showSkills);
+    setShowAll(!showAll);
   };
+
+  useEffect(() => {
+    setShowAll(false);
+  }, [urlChangeStatus]);
 
   return (
     <div
       className={`content-toggle-container ${
-        showSkills ? 'content-toggle-container-on' : ''
+        showAll ? 'content-toggle-container-on' : ''
       }`}
       onClick={handleClick}
     >
       <i
         className={`content-toggle-ball ${
-          showSkills ? 'content-toggle-ball-on' : ''
+          showAll ? 'content-toggle-ball-on' : ''
         }`}
       ></i>
     </div>

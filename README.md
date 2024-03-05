@@ -33,4 +33,3 @@
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=elaninhust/coze-beautify&type=Date)](https://star-history.com/#elaninhust/coze-beautify&Date)
-

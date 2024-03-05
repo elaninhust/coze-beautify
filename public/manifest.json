@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "coze-beautify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "this is a chrome extension named coze-beautify.",
   "permissions": ["storage"],
   "icons": {
@@ -27,7 +27,7 @@
         "*://*.coze.com/explore/*"
       ],
       "js": ["src/pages/content/index.js"],
-      "css": ["assets/css/contentStyle17096298409.chunk.css"]
+      "css": ["assets/css/contentStyle17096300473.chunk.css"]
     }
   ]
 }

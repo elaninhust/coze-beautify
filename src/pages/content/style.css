@@ -20,13 +20,13 @@
 }
 
 .sidesheet-container-show-all.sidesheet-container > div {
-  flex: 1;
+  flex: 2;
   width: unset !important;
   overflow: unset;
 }
 
 .sidesheet-container-show-all.sidesheet-container > div:last-child {
-  width: unset !important;
+  width: 33% !important;
   flex: 1;
 }
 
@@ -44,6 +44,7 @@
   padding-right: 50px !important;
 }
 
+/* 右下角切换按钮 */
 .content-container {
   position: fixed;
   bottom: 100px;

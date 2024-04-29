@@ -27,7 +27,7 @@
         "*://*.coze.com/explore/*"
       ],
       "js": ["src/pages/content/index.js"],
-      "css": ["assets/css/contentStyle17143559469.chunk.css"]
+      "css": ["assets/css/contentStyle17143585215.chunk.css"]
     }
   ]
 }

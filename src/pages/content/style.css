@@ -1,23 +1,5 @@
 /* CSS that can pollute global styles. Use it with caution. */
 /* If you use ShodowRoot for style pollution, this style will not be applied inside the content script. */
-/* .sidesheet-container {
-  grid-template-columns: 12fr 0 24fr !important;
-}
-
-.sidesheet-container > div:nth-child(2) {
-  width: 0;
-  overflow: hidden;
-}
-
-.sidesheet-container-with-skills.sidesheet-container {
-  grid-template-columns: 12fr 12fr 12fr !important;
-}
-
-.sidesheet-container-with-skills.sidesheet-container > div:nth-child(2) {
-  width: unset;
-  overflow: unset;
-} */
-
 /* 我的 bot */
 .sidesheet-container {
   display: flex !important;
@@ -27,24 +9,23 @@
   width: 100% !important;
 }
 
-.sidesheet-container > div:nth-child(1),
-.sidesheet-container > div:nth-child(2) {
+.sidesheet-container > div {
   width: 0 !important;
   overflow: hidden;
 }
 
-.sidesheet-container > div:nth-child(3) {
+.sidesheet-container > div:last-child {
   width: 100% !important;
+  overflow: unset;
 }
 
-.sidesheet-container-show-all.sidesheet-container > div:nth-child(1),
-.sidesheet-container-show-all.sidesheet-container > div:nth-child(2) {
+.sidesheet-container-show-all.sidesheet-container > div {
   flex: 1;
   width: unset !important;
   overflow: unset;
 }
 
-.sidesheet-container-show-all.sidesheet-container > div:nth-child(3) {
+.sidesheet-container-show-all.sidesheet-container > div:last-child {
   width: unset !important;
   flex: 1;
 }

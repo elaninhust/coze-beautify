@@ -30,6 +30,12 @@
 
 <div align="center"><img width="600" src="assets/SCR-20240105-pqfr.png" alt="coze-beautify Logo"></div>
 
+### 最后
+
+由于 coze 官方一直在不断迭代升级中，如果使用过程中遇到暂时不可使用的情况，可以在[这里](chrome://extensions/)临时暂停使用本插件，并提交 [issue](https://github.com/elaninhust/coze-beautify/issues/new)，看到的话会尽快修复更新，感谢理解～
+
+<div align="center"><img width="600" src="assets/SCR-20240105-zsgd.png" alt="coze-beautify Logo"></div>
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=elaninhust/coze-beautify&type=Date)](https://star-history.com/#elaninhust/coze-beautify&Date)

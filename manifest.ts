@@ -46,6 +46,10 @@ function generateManifest(
           '*://*.coze.com/space/*/bot/*',
           '*://*.coze.com/space/*/bot',
           '*://*.coze.com/explore/*',
+          '*://*.coze.cn/*',
+          '*://*.coze.cn/space/*/bot/*',
+          '*://*.coze.cn/space/*/bot',
+          '*://*.coze.cn/explore/*',
         ],
         js: ['src/pages/content/index.js'],
         // KEY for cache invalidation

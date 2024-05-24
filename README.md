@@ -2,7 +2,7 @@
 
 ## coze-beautify
 
-针对 [coze](https://www.coze.com) 的 bot 界面优化的 Chrome 插件
+针对 [海外版coze](https://www.coze.com) 和 [大陆版coze](https://www.coze.cn) 的 个人 bot 界面优化的 Chrome 插件
 
 原版 bot 界面的痛点：
 
